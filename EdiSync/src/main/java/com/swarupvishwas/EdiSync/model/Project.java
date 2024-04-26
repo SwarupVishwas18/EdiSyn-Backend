@@ -14,7 +14,8 @@ public class Project {
     String projectCat;
     String projectTitle;
     String projectDetails;
-    float projectProgress;
+    int projectProgress;
+
 
     public Project() {
     }
@@ -59,11 +60,11 @@ public class Project {
         this.projectDetails = projectDetails;
     }
 
-    public float getProjectProgress() {
+    public int getProjectProgress() {
         return projectProgress;
     }
 
-    public void setProjectProgress(float projectProgress) {
+    public void setProjectProgress(int projectProgress) {
         this.projectProgress = projectProgress;
     }
 }

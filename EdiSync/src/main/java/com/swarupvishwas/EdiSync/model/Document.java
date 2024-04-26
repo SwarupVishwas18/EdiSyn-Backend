@@ -14,7 +14,17 @@ public class Document {
     String docLink;
     String uploadDate;
 
+    int projectId;
+
     public Document() {
+    }
+
+    public int getProjectId() {
+        return projectId;
+    }
+
+    public void setProjectId(int projectId) {
+        this.projectId = projectId;
     }
 
     public int getId() {
