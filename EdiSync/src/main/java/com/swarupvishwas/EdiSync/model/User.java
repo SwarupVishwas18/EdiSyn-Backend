@@ -12,8 +12,10 @@ public class User {
     private String firstName;
     private String lastName;
     private String email;
-    private String type;
+    private String role;
     private String imgSrc;
+
+    private String password;
 
     public User() {
     }
@@ -50,12 +52,12 @@ public class User {
         this.email = email;
     }
 
-    public String getType() {
-        return type;
+    public String getRole() {
+        return role;
     }
 
-    public void setType(String type) {
-        this.type = type;
+    public void setRole(String role) {
+        this.role = role;
     }
 
     public String getImgSrc() {
@@ -64,5 +66,13 @@ public class User {
 
     public void setImgSrc(String imgSrc) {
         this.imgSrc = imgSrc;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
     }
 }
