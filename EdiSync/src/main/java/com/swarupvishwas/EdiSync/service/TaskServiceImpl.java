@@ -4,7 +4,7 @@ import com.swarupvishwas.EdiSync.model.Task;
 import com.swarupvishwas.EdiSync.repository.TaskRepository;
 
 import java.util.ArrayList;
-
+import java.util.List;
 public class TaskServiceImpl implements TaskService {
 
     TaskRepository taskRepo;
@@ -16,12 +16,12 @@ public class TaskServiceImpl implements TaskService {
     }
 
     @Override
-    public ArrayList<Task> getTasksByMember(int userId) {
+    public List<Task> getTasksByMember(int userId) {
         return taskRepo.getTasksByUser(userId);
     }
 
-    @Override
-    public void setTaskStatus(Task task, String status) {
-        taskRepo.updateStatus(task.getId(), status);
-    }
+//    @Override
+//    public void setTaskStatus(Task task, String status) {
+//        taskRepo.updateStatus(status, task.getId());
+//    }
 }

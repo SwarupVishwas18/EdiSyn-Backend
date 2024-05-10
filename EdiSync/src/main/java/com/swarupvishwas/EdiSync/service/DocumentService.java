@@ -3,6 +3,7 @@ package com.swarupvishwas.EdiSync.service;
 import com.swarupvishwas.EdiSync.model.Document;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -11,5 +12,5 @@ public interface DocumentService {
 
     public Optional<Document> getDocumentById(int id);
 
-    public Document getDocumentsByProject(int projectId);
+    public List<Document> getDocumentsByProject(int projectId);
 }

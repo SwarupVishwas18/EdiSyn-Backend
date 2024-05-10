@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean checkCredentials(String email, String password) {
-        User user = userRepo.findByEmail(email, password);
+        User user = userRepo.findByEmailAndPass(email, password);
         return user != null;
     }
 

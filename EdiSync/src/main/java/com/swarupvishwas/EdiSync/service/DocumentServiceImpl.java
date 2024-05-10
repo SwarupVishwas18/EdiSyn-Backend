@@ -3,6 +3,7 @@ package com.swarupvishwas.EdiSync.service;
 import com.swarupvishwas.EdiSync.model.Document;
 import com.swarupvishwas.EdiSync.repository.DocumentRepository;
 
+import java.util.List;
 import java.util.Optional;
 
 public class DocumentServiceImpl implements DocumentService {
@@ -20,7 +21,7 @@ public class DocumentServiceImpl implements DocumentService {
     }
 
     @Override
-    public Document getDocumentsByProject(int projectId) {
+    public List<Document> getDocumentsByProject(int projectId) {
         return docRepo.getDocumentById(projectId);
     }
 }

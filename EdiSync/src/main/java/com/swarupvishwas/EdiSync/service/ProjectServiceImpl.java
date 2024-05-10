@@ -4,6 +4,7 @@ import com.swarupvishwas.EdiSync.model.Project;
 import com.swarupvishwas.EdiSync.repository.ProjectRepository;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 public class ProjectServiceImpl implements  ProjectService {
@@ -19,7 +20,7 @@ public class ProjectServiceImpl implements  ProjectService {
     }
 
     @Override
-    public ArrayList<Project> getProjectsByUserId(int userId) {
+    public List<Project> getProjectsByUserId(int userId) {
         return projRepo.getProjectsByUser(userId);
     }
 

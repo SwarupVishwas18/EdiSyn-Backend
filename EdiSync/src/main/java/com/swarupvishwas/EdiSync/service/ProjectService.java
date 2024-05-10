@@ -4,6 +4,7 @@ import com.swarupvishwas.EdiSync.model.Project;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Optional;
 
 @Service
@@ -12,7 +13,7 @@ public interface ProjectService {
 
     public void setProgress(int projectId, int progress);
 
-    public ArrayList<Project> getProjectsByUserId(int userId);
+    public List<Project> getProjectsByUserId(int userId);
 
     public Optional<Project> getProjectDetails(int id);
 }

@@ -7,7 +7,10 @@ import com.swarupvishwas.EdiSync.model.User;
 @Repository
 public interface UserRepository extends JpaRepository<User, Integer> {
     @Query("SELECT u FROM User u WHERE u.email = ?1 and u.password = ?2")
-    public User findByEmail(String email, String password);
+    public User findByEmailAndPass(String email, String password);
+
+    @Query("SELECT u FROM User u WHERE u.email = ?1")
+    public User findByEmail(String email);
 
     @Query("SELECT u.role FROM User u WHERE u.id = ?1")
     public String getRole(int id);

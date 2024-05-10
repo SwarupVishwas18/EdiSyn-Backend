@@ -14,10 +14,6 @@ public class TeamServiceImpl implements TeamService {
         return teamRepo.save(team);
     }
 
-    @Override
-    public void addTeamMember(int member1Id,int member2Id, int member3Id, int member4Id ,int teamId) {
-        teamRepo.addMembers(member1Id, member2Id, member3Id, member4Id, teamId);
-    }
 
     @Override
     public Optional<Team> getTeam(int id) {
